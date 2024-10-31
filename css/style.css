@@ -1,0 +1,292 @@
+p{
+    font-size: 20px;
+}
+body, html {
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFF2EB;
+  }
+
+  main {
+    border-radius: 8px;
+    background-color: #B9E5E8;
+    flex:5;
+    padding-left:1em;
+  }
+.container{
+    text-align: center;
+}
+
+  header {
+    border-radius: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #DFF2EB;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h1 a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit; 
+    font-weight: inherit;
+}
+h1 a:hover,
+h1 a:focus {
+     color: gray;
+}
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 8px 0;
+}
+section {
+  background-color: #7AB2D3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+  header nav ul {
+    display: flex;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  header nav ul li{
+    flex: 1;
+  }
+
+  header nav ul li a {
+    border-radius: 8px;
+    color: #333;
+    background: #DFF2EB;
+    text-decoration: none;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+  }
+  header nav ul li a:hover{
+    background-color: #B9E5E8;
+  }
+  header nav ul li a:active,
+    header nav ul li a:focus {
+    text-decoration: underline; 
+}
+  
+/* Tables */  
+table#events th{
+  background-color: #397A92;
+  color: #FFFFFF;
+  padding: 12px;
+  text-align: center;
+}
+table#events th, table#events td {
+    padding: .3em;
+    border:solid black 1px;
+  }
+  
+table#events {
+    border-collapse: collapse;
+    border:solid black 1px;
+    width:100%;
+  }
+table#events tr:nth-of-type(even){
+    background-color: #D1EDF0;
+  }
+table#events tr:nth-of-type(odd) {
+    background-color:#B9E5E8;
+  }
+table#events tr:hover {
+    background: #82AFC1;
+  }
+.quote {
+    font-style: italic;
+    color: #555;
+  }
+
+/* Work with images */
+#headimg{
+  height: 5%;
+  width: 5%;
+  float: right;
+  margin-top: 5px;
+}
+figure.feature {
+    max-width: 17%;
+    margin: 1em;
+    text-align: center;
+    float: right;
+  }
+  
+  /* Image styling */
+  img.feature {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;    
+  }
+
+  img.feature img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Figcaption styling */
+  figcaption {
+    font-style: italic;
+    color: black;
+    font-size: 85%;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  
+  figcaption span {
+    font-weight: normal;
+    color: gray;
+  }
+
+/* Styling for the gallery container */
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* Styling for images */
+.gallery img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Zoom effect on hover */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+/* Styling for captions */
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+}
+.gallery2{
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.gallery2 figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+  .gallery2 img {
+    width: 300px;
+    height: 218px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.gallery2 img:hover {
+  transform: scale(1.2);
+}
+.gallery2 figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Socials Section Styling */
+ section#socials {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#socials h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between links */
+}
+
+#socials li {
+  display: inline;
+}
+
+#socials > ul> li>a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  padding: 10px 15px;
+  border: 2px solid #7AB2D3;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for social links */
+#socials a:hover {
+  background-color: #4A628A;
+  color: #fff;
+}
+
+ /* Styling for footer  */
+  footer {
+    border-radius: 4px;
+    background-color: #4A628A;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
